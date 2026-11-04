@@ -2,9 +2,6 @@
 
 ## 1. Integrantes
 
-- Felipe Militao — RGM: 49331108
-- Gabriel dos Santos Eufrasio — RGM: 49005260
-- Gabriel Gonçalves Moura — RGM: 48892009
 - Kevin Gomes — RGM: 47796006
 
 ## 2. Sobre o projeto
