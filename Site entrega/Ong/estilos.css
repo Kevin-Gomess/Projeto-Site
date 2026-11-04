@@ -1,0 +1,342 @@
+/* ===== Patas Unidas — folha de estilos compartilhada ===== */
+
+/* Variáveis de cores e fontes (identidade visual) */
+:root {
+  --verde: #1f5f4a;
+  --verde-escuro: #143f31;
+  --laranja: #e8833a;
+  --creme: #fbf6ee;
+  --texto: #23302b;
+  --cinza: #5d6b65;
+  --branco: #ffffff;
+  --erro: #b3261e;
+  --sucesso: #1e7a46;
+  --raio: 12px;
+}
+
+/* box-sizing para todos os elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", Arial, sans-serif;
+  color: var(--texto);
+  background: var(--creme);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--verde-escuro);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--verde);
+}
+
+/* Foco visível para navegação por teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--laranja);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== Cabeçalho e menu (Flexbox) ===== */
+.cabecalho {
+  background: var(--verde);
+  padding: 16px 0;
+}
+
+.cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  color: var(--branco);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] {
+  background: var(--laranja);
+}
+
+/* ===== Destaque (hero) ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 56px 0;
+}
+
+.hero-texto,
+.hero-imagem {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin: 0 0 16px;
+}
+
+.hero-imagem img {
+  border-radius: var(--raio);
+  box-shadow: 0 12px 30px rgba(20, 63, 49, 0.25);
+}
+
+.etiqueta {
+  display: inline-block;
+  background: var(--laranja);
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+/* ===== Botões ===== */
+.botao {
+  display: inline-block;
+  background: var(--laranja);
+  color: var(--branco);
+  border: 2px solid var(--laranja);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.botao:hover {
+  background: #cf6d25;
+}
+
+.botao-secundario {
+  background: transparent;
+  color: var(--verde);
+  border-color: var(--verde);
+}
+
+.botao-secundario:hover {
+  background: var(--verde);
+  color: var(--branco);
+}
+
+.acoes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* ===== Seções e cartões ===== */
+.secao {
+  padding: 40px 0;
+}
+
+.cartoes {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.cartao {
+  flex: 1 1 280px;
+  background: var(--branco);
+  border: 1px solid #e6dccb;
+  border-radius: var(--raio);
+  padding: 24px;
+}
+
+.cartao img {
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.cartao h3 {
+  margin-top: 0;
+}
+
+.contribua {
+  background: #fdeedd;
+  border-left: 4px solid var(--laranja);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.numeros {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: var(--verde);
+  color: var(--branco);
+  border-radius: var(--raio);
+  padding: 28px;
+  text-align: center;
+}
+
+.numeros strong {
+  display: block;
+  font-size: 2rem;
+  font-family: "Fraunces", Georgia, serif;
+}
+
+/* ===== Interação: mostrar/ocultar ===== */
+.painel {
+  background: var(--branco);
+  border: 1px solid #e6dccb;
+  border-radius: var(--raio);
+  padding: 20px 24px;
+  margin-top: 16px;
+}
+
+.oculto {
+  display: none;
+}
+
+/* ===== Formulário ===== */
+.layout-contato {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.layout-contato > * {
+  flex: 1 1 320px;
+}
+
+.formulario {
+  background: var(--branco);
+  border-radius: var(--raio);
+  padding: 24px;
+  border: 1px solid #e6dccb;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #cfc5b4;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.aviso {
+  font-size: 0.9rem;
+  color: var(--cinza);
+}
+
+.mensagem {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.mensagem.erro {
+  background: #fde8e6;
+  color: var(--erro);
+  border: 1px solid var(--erro);
+}
+
+.mensagem.sucesso {
+  background: #e3f4ea;
+  color: var(--sucesso);
+  border: 1px solid var(--sucesso);
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  background: var(--verde-escuro);
+  color: #dfe9e4;
+  padding: 28px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.rodape a {
+  color: #ffd2ad;
+}
+
+/* ===== Responsividade: celular (até 768px) ===== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 32px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cabecalho .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu a {
+    padding: 6px 10px;
+  }
+}
+
