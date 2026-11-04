@@ -1,5 +1,13 @@
 # Projeto-Site
 
+## Integrantes
+
+- Nome: Gabriel dos santos eufrasio 49005260
+- Nome: Felipe militao 49331108
+- Nome: Kevin Gomes 47796006
+- Nome:
+- Nome:
+
 🐾 Patas Unidas — Site Institucional
 1. Sobre o projeto
 O Patas Unidas é um projeto acadêmico que apresenta o site institucional de uma organização não governamental fictícia voltada à proteção e ao bem-estar animal. A proposta da ONG é contribuir para a proteção de cães e gatos, por meio de ações de resgate, cuidados, adoção responsável, castração e conscientização da comunidade.
