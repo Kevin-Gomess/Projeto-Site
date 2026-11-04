@@ -1,10 +1,6 @@
 # 🐾 Patas Unidas — Site Institucional
 
-## 1. Integrantes
-
-- Kevin Gomes — RGM: 47796006
-
-## 2. Sobre o projeto
+## 1. Sobre o projeto
 
 O Patas Unidas é um projeto acadêmico que apresenta o site institucional de uma organização não governamental fictícia voltada à proteção e ao bem-estar animal.
 
@@ -14,7 +10,7 @@ O site foi desenvolvido para apresentar a organização, divulgar seus projetos 
 
 **Aviso:** A Patas Unidas é uma ONG fictícia, criada exclusivamente para fins acadêmicos. As informações institucionais, os números apresentados e os dados de contato são ilustrativos e não representam uma organização real.
 
-## 3. Objetivo do site
+## 2. Objetivo do site
 
 O objetivo é criar uma página institucional simples, organizada e acessível, que permita ao visitante:
 
@@ -23,7 +19,7 @@ O objetivo é criar uma página institucional simples, organizada e acessível, 
 - Entender como ajudar e participar como voluntário;
 - Preencher um formulário de contato com validação dos campos.
 
-## 4. Tecnologias utilizadas
+## 3. Tecnologias utilizadas
 
 | Tecnologia | Utilização no projeto |
 |---|---|
@@ -35,7 +31,7 @@ O projeto utiliza JavaScript básico, sem frameworks e sem integração com banc
 
 Também são utilizadas as fontes Fraunces e Nunito, disponibilizadas pelo Google Fonts.
 
-## 5. Estrutura do projeto
+## 4. Estrutura do projeto
 
 Todos os arquivos estão organizados na mesma pasta:
 
@@ -74,13 +70,13 @@ ONG_PatasUnidas/
 - **educacao.jpg:** imagem utilizada no projeto Patinhas na Escola.
 - **README.md:** apresenta as informações, tecnologias, estrutura e instruções do projeto.
 
-## 6. Páginas do site
+## 5. Páginas do site
 
-### 6.1. Início — index.html
+### 5.1. Início — index.html
 
 Apresenta a Patas Unidas e sua proposta de proteção animal. A página contém uma chamada principal, links para conhecer os projetos e participar, além de indicadores ilustrativos sobre o impacto da organização.
 
-### 6.2. Sobre — sobre.html
+### 5.2. Sobre — sobre.html
 
 Apresenta a história fictícia da ONG, criada no contexto do projeto como uma iniciativa iniciada em 2018.
 
@@ -88,7 +84,7 @@ A página também reúne a missão, o público atendido, os valores e os objetiv
 
 Possui um botão interativo que permite mostrar ou ocultar informações institucionais.
 
-### 6.3. Projetos — projetos.html
+### 5.3. Projetos — projetos.html
 
 Apresenta três iniciativas fictícias:
 
@@ -98,7 +94,7 @@ Apresenta três iniciativas fictícias:
 
 Cada projeto apresenta sua proposta, uma imagem ilustrativa e exemplos de como a comunidade pode contribuir.
 
-### 6.4. Contato — contato.html
+### 5.4. Contato — contato.html
 
 Apresenta possibilidades de voluntariado e disponibiliza um formulário com os campos:
 
@@ -109,11 +105,11 @@ Apresenta possibilidades de voluntariado e disponibiliza um formulário com os c
 
 O formulário verifica se os dados foram preenchidos corretamente e apresenta uma mensagem de retorno ao visitante.
 
-## 7. Funcionalidades JavaScript
+## 6. Funcionalidades JavaScript
 
 O site possui duas funcionalidades desenvolvidas em JavaScript.
 
-### 7.1. Validação do formulário
+### 6.1. Validação do formulário
 
 **Arquivo:** formulario.js
 
@@ -134,7 +130,7 @@ Quando existe algum problema, o site apresenta uma mensagem orientando o visitan
 
 **Importante:** o formulário é apenas demonstrativo. Nenhum e-mail é enviado e nenhum dado é armazenado.
 
-### 7.2. Mostrar e ocultar informações
+### 6.2. Mostrar e ocultar informações
 
 **Arquivo:** script.js
 
@@ -153,7 +149,7 @@ Para desenvolver essa interação, foram utilizados:
 
 A interação pode ser realizada várias vezes, permitindo mostrar e ocultar as informações sem recarregar a página.
 
-## 8. Como executar o projeto
+## 7. Como executar o projeto
 
 Para visualizar o site, siga os passos:
 
@@ -166,7 +162,7 @@ Para visualizar o site, siga os passos:
 
 Não é necessário instalar programas adicionais, configurar banco de dados ou utilizar servidor.
 
-## 9. Considerações finais
+## 8. Considerações finais
 
 O desenvolvimento do site Patas Unidas permitiu aplicar conhecimentos de HTML5, CSS3 e JavaScript na criação de uma página institucional com diferentes seções e recursos interativos.
 
@@ -174,7 +170,7 @@ O projeto reúne informações sobre uma ONG fictícia, apresenta iniciativas de
 
 Além da construção visual, foram trabalhados conceitos de organização de arquivos, navegação entre páginas, validação de formulários e manipulação de elementos HTML por meio do JavaScript.
 
-## 10. Créditos
+## 9. Créditos
 
 - **Nome do projeto:** Patas Unidas;
 - **Tipo:** projeto acadêmico — site institucional de ONG fictícia;
